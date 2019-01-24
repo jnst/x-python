@@ -1,6 +1,8 @@
-def func(track):
-    if track is None:
-        print 'is None'
+def func(x):
+    if x is None:
+        print(f'{x} is None')
+    else:
+        print(f'{x} is not None')
 
 if __name__ == '__main__':
-    func('')
+    func('test')
