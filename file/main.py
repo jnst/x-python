@@ -1,13 +1,12 @@
 import os
 
-PATH = os.path.dirname(__file__) + '/test.txt'
-
-def func():
-    if os.path.exists(PATH):
-        os.remove(PATH)
-        print '%s removed.' % PATH
+def func(path):
+    if os.path.exists(path):
+        os.remove(path)
+        print(f'{path} removed.')
     else:
-        print '%s not exists.' % PATH
+        print(f'{path} not exists.')
 
 if __name__ == '__main__':
-    func()
+    path = os.path.dirname(__file__) + '/test.txt'
+    func(path)
