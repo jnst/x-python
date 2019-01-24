@@ -1,8 +1,11 @@
-def func(x):
-    if x is None:
-        print(f'{x} is None')
-    else:
-        print(f'{x} is not None')
+def func(x, y, z):
+    print(f'{x}, {y}, {z}')
+
+    if y:
+        print('y is exists')
+
+    if not y:
+        print('y is not exists')
 
 if __name__ == '__main__':
-    func('test')
+    func('test1', None, 'test3')
