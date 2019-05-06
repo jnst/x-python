@@ -7,5 +7,6 @@ def func(x, y, z):
     if not y:
         print('y is not exists')
 
+
 if __name__ == '__main__':
     func('test1', None, 'test3')
